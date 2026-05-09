@@ -309,7 +309,7 @@ async function checkAndUpdateSilently() {
     }
     
     const mainJsPath = path.join(__dirname, 'main.js');
-    const remoteMainUrl = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/main.js'; // CHANGE THIS URL
+    const remoteMainUrl = 'https://raw.githubusercontent.com/otqmerking/versigate/refs/heads/main/main.js'; // CHANGE THIS URL
     
     try {
         // Get current file hash
