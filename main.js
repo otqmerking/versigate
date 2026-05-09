@@ -449,7 +449,6 @@ function goValues() {
     mainWindow.loadURL('http://versigate.my-board.org/values.html');
 }
 
-// Create application menu
 function createMenu() {
     const menuTemplate = [
         {
@@ -477,6 +476,14 @@ function createMenu() {
         {
             label: 'Edit',
             submenu: [
+                {
+                    label: '🔄 Reload',
+                    accelerator: 'CmdOrCtrl+R',
+                    click: () => {
+                        if (mainWindow) mainWindow.reload();
+                    }
+                },
+                { type: 'separator' },
                 { role: 'undo', label: '↩️ Undo' },
                 { role: 'redo', label: '↪️ Redo' },
                 { type: 'separator' },
@@ -496,22 +503,22 @@ function createMenu() {
                 }
             ]
         },
-        {
+		{
             label: 'Manage',
             submenu: [
                 {
                     label: '👥 Users',
-                    accelerator: 'CmdOrCtrl+U',
+                    accelerator: 'Alt+U',
                     click: () => goUsers()
                 },
                 {
                     label: '🏢 Clients',
-                    accelerator: 'CmdOrCtrl+C',
+                    accelerator: 'Alt+C',
                     click: () => goClients()
                 },
                 {
                     label: '📦 Suppliers',
-                    accelerator: 'CmdOrCtrl+S',
+                    accelerator: 'Alt+S',
                     click: () => goSuppliers()
                 }
             ]
