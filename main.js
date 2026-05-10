@@ -442,7 +442,7 @@ function goDeveloper() {
 }
 
 function goGateLog() {
-    mainWindow.loadURL('http://versigate.my-board.org/about.html');
+    mainWindow.loadURL('http://versigate.my-board.org/gatelog.html');
 }
 
 function goValues() {
