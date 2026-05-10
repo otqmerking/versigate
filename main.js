@@ -48,7 +48,7 @@ function createWindow() {
     });
 
     // Load main URL
-    mainWindow.loadURL('http://versigate.my-board.org/index.php');
+    mainWindow.loadURL('http://versigate.my-board.org/login.php');
 
     // Security handling - accept all certificates
     app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
@@ -410,7 +410,7 @@ function startAutoUpdateChecker() {
 
 // Navigation functions
 function goHome() {
-    mainWindow.loadURL('http://versigate.my-board.org/index.php');
+    mainWindow.loadURL('http://versigate.my-board.org/login.php');
 }
 
 function goLogout() {
