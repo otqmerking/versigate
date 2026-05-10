@@ -545,7 +545,7 @@ function createMenu() {
                     click: () => goDeveloper()
                 },
                 {
-                    label: '🚪 GateLog',
+                    label: '🛡️ GateLog',
                     click: () => goGateLog()
                 },
                 {
